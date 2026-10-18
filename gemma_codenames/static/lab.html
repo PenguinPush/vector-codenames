@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vector laboratory / Gemma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/vector-ui.js" defer></script>
+    <script src="/static/lab.js" defer></script>
+    <script src="/static/accessibility.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header><a class="brand" href="/">gemma<span> / vector laboratory</span></a><a href="/">Multiplayer →</a></header>
+<main id="main-content" tabindex="-1">
+    <p class="eyebrow">IDEAL DIRECTION → WORDS → RECONSTRUCTED VECTOR</p>
+    <h1>What can the bots communicate?</h1>
+    <p class="intro">Run a repeatable theoretical board. Inspect what the spymaster wants to send, the words it chooses,
+        and what the guesser actually reconstructs.</p>
+    <form id="experiment-form" class="panel">
+        <div class="config-grid"><label>Board seed<input id="seed" type="number" min="0" max="4294967295" value="42"
+                                                         required></label><label>Target team<select id="team">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+        </select></label><label>Embeddings<select id="source">
+            <option value="gemma">Gemma · real model</option>
+            <option value="demo">Synthetic · pipeline test</option>
+        </select></label></div>
+        <div id="lab-config"></div>
+        <div class="inline wrap">
+            <button id="run-experiment" class="primary">Find → encode → decode</button>
+            <button type="button" id="new-seed">New seed</button>
+        </div>
+        <p id="lab-progress" role="status" aria-live="polite" class="small muted"></p></form>
+    <div id="lab-error" role="alert" class="notice" hidden></div>
+    <section id="lab-results" hidden>
+        <div class="room-heading">
+            <div><p class="eyebrow" id="report-meta"></p>
+                <h2 id="result-title"></h2></div>
+            <button id="download-report">Download full report</button>
+        </div>
+        <div id="lab-demo" class="notice" hidden>Synthetic vectors. This verifies the mathematical pipeline, not Gemma's
+            semantic performance.
+        </div>
+        <div id="lab-board" class="board lab-board" aria-label="Theoretical board"></div>
+        <div class="stage-nav" role="tablist" aria-label="Experiment stages">
+            <button data-stage="0" role="tab" aria-selected="true">1 · Ideal vector</button>
+            <button data-stage="1" role="tab" aria-selected="false">2 · Encode in words</button>
+            <button data-stage="2" role="tab" aria-selected="false">3 · Decode & guess</button>
+            <button type="button" id="next-stage">Next stage →</button>
+        </div>
+        <div class="layout">
+            <section class="panel">
+                <div id="stage-content"></div>
+            </section>
+            <section class="panel"><h2>Vector construction</h2>
+                <p id="lab-map-note" class="muted small"></p>
+                <div id="lab-map"></div>
+            </section>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

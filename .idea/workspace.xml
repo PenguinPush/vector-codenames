@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c1a993c-e2ca-4d28-b60e-1a477c2f96a1" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="2.4745473473501773" />
+      <entry key="MS500" value="7.793749282224691" />
+      <entry key="S2" value="17.321038688738074" />
+      <entry key="S5" value="34.994948764834604" />
+      <entry key="S10" value="68.01692106767447" />
+      <entry key="S30" value="180.88063450632998" />
+      <entry key="S60" value="286.3615835173503" />
+      <entry key="M2" value="420.59802759883183" />
+      <entry key="M5" value="672.5214668344895" />
+      <entry key="M10" value="903.7082922494166" />
+      <entry key="M15" value="1064.28245255222" />
+      <entry key="M30" value="1479.5590053464339" />
+      <entry key="H1" value="2250.691910482632" />
+      <entry key="H2" value="3307.737124539898" />
+      <entry key="H4" value="4273.779887383137" />
+      <entry key="D1" value="5480.472246108874" />
+      <entry key="W1" value="5737.488422182859" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="1.8250815250913528E-122" />
+      <entry key="S60" value="1.3509557820635732E-61" />
+      <entry key="M2" value="3.6755350386895067E-31" />
+      <entry key="M5" value="6.700824242688963E-13" />
+      <entry key="M10" value="8.18585624274482E-7" />
+      <entry key="M15" value="8.750698934183975E-5" />
+      <entry key="M30" value="0.009354517055510192" />
+      <entry key="H1" value="0.09671875234673914" />
+      <entry key="H2" value="0.31099638638854044" />
+      <entry key="H4" value="0.557670499837088" />
+      <entry key="D1" value="0.9072555046402055" />
+      <entry key="W1" value="0.9861917681988732" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="2.440013721163803" />
+      <entry key="MS500" value="7.768228610522236" />
+      <entry key="S2" value="17.304558502827252" />
+      <entry key="S5" value="34.98019407162066" />
+      <entry key="S10" value="68.00137536471802" />
+      <entry key="S30" value="180.86484578275255" />
+      <entry key="S60" value="286.34841059247543" />
+      <entry key="M2" value="420.5881607192378" />
+      <entry key="M5" value="672.5150256320682" />
+      <entry key="M10" value="903.7037635387047" />
+      <entry key="M15" value="1064.278892634754" />
+      <entry key="M30" value="1479.565769784187" />
+      <entry key="H1" value="2250.7866521193287" />
+      <entry key="H2" value="3308.0466635654657" />
+      <entry key="H4" value="4274.336613068566" />
+      <entry key="D1" value="5481.379298806077" />
+      <entry key="W1" value="5738.474583593226" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3KsQX0fFidba7WSoT4Dm9rp0A85" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "KEY_CHAT_IN_TOOLWINDOW": "false",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.demo.executor": "Run",
+    "Python.test_random_board.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "refreshed",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/andrewdai/IdeaProjects/gemma-codenames/gemma_codenames/data",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Users/andrewdai/IdeaProjects/gemma-codenames/node_modules/typescript/lib"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gemma_codenames/data" />
+      <recent name="$PROJECT_DIR$/.cache" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="gemma-codenames" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="gemma-codenames" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c1a993c-e2ca-4d28-b60e-1a477c2f96a1" name="Changes" comment="" />
+      <created>1792343833205</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1792343833205</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

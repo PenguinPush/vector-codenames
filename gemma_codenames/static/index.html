@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gemma / Codenames</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/vector-ui.js" defer></script>
+    <script src="/static/app.js" defer></script>
+    <script src="/static/accessibility.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header><a class="brand" href="/">gemma<span> / codenames</span></a><span id="connection" class="eyebrow">SEMANTIC PLAYGROUND</span>
+</header>
+<main id="main-content" tabindex="-1">
+    <section id="home">
+        <p class="eyebrow">WORDS → VECTORS → CONNECTIONS</p>
+        <h1>How close<br>is a good clue?</h1>
+        <p class="intro">Bots encode separating vectors as words and coefficients. Watch them communicate through
+            Codenames, or inspect a seeded experiment in the vector laboratory.</p>
+        <div class="home-actions">
+            <form id="create-form"><h2>Vector communication</h2>
+                <div id="home-config"></div>
+                <button class="primary">Create a room ↗</button></form>
+            <form id="join-form"><label for="join-code">Have a room code?</label>
+                <div class="inline"><input id="join-code" placeholder="Room word, e.g. MOON" maxlength="4"
+                                           pattern="[A-Za-z]{1,4}" required autocomplete="off">
+                    <button>Join →</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div id="notice" role="alert" hidden></div>
+    <section id="room" hidden>
+        <div class="room-heading">
+            <div><p class="eyebrow" id="room-code"></p>
+                <h1 id="status">Connecting…</h1></div>
+            <div class="inline"><span id="mode" class="badge"></span>
+                <button id="copy-link">Copy invite</button>
+            </div>
+        </div>
+        <div id="demo-notice" class="notice" hidden>Synthetic test vectors · This is a UI demonstration, not Gemma
+            output.
+        </div>
+        <div class="layout">
+            <div class="play-area">
+                <section id="lobby" class="panel">
+                    <div class="section-head"><h2>Take a seat</h2><span>or watch the experiment</span></div>
+                    <label for="player-name" class="sr-only">Your name</label><input id="player-name" maxlength="24"
+                                                                                     placeholder="Your name"
+                                                                                     value="Guest">
+                    <p id="room-config-summary" class="small muted"></p>
+                    <details id="room-config-editor">
+                        <summary>Configure vector communication</summary>
+                        <form id="room-config-form">
+                            <div id="room-config"></div>
+                            <button>Apply settings</button>
+                        </form>
+                    </details>
+                    <div id="seats" class="seats"></div>
+                    <div id="lobby-actions" class="inline wrap"></div>
+                    <p class="muted small">Empty seats use bots. Analysis spectators see the full key and cannot become
+                        players on this board.</p>
+                </section>
+                <div class="scoreline"><span class="red-text" id="red-count">RED · 9</span><span id="role-label">PUBLIC SPECTATOR</span><span
+                        class="blue-text" id="blue-count">BLUE · 8</span></div>
+                <div id="board" class="board" aria-label="Codenames board"></div>
+                <section class="turn-panel">
+                    <div class="clue-line">
+                        <div><p class="eyebrow">CURRENT CLUE</p>
+                            <h2 id="clue">—</h2></div>
+                        <span id="turn-info"></span></div>
+                    <div id="controls" class="inline wrap"></div>
+                    <form id="clue-form" hidden>
+                        <div class="inline"><label for="clue-word" class="sr-only">Clue word</label><input
+                                id="clue-word" placeholder="One word" pattern="[A-Za-z]{1,30}" maxlength="30"
+                                required><label for="clue-count" class="sr-only">Target count</label><input
+                                id="clue-count" type="number" min="1" max="9" value="1" required>
+                            <button class="primary">Give clue</button>
+                        </div>
+                    </form>
+                    <p id="progress" aria-live="polite" class="muted small"></p>
+                </section>
+                <details class="panel">
+                    <summary>Game log</summary>
+                    <ol id="events"></ol>
+                </details>
+            </div>
+            <aside id="model-analysis" class="lab panel">
+                <div class="section-head"><h2>Inside the model</h2><span class="eyebrow">LIVE ANALYSIS</span></div>
+                <div id="live-search" hidden aria-live="polite"></div>
+                <label for="history" class="sr-only">Inspect a previous clue</label><select id="history">
+                <option value="live">Current turn</option>
+            </select>
+                <p id="analysis-context" class="small muted"></p>
+                <div id="pipeline" class="pipeline"><span>Embed</span><span>Normalize</span><span>Compare</span><span>Search</span>
+                </div>
+                <div id="metrics" class="metrics"></div>
+                <div id="wire-summary" class="small"></div>
+                <div class="tabs" role="tablist" aria-label="Analysis view">
+                    <button id="tab-scores" role="tab" aria-selected="true" aria-controls="scores-view"
+                            data-tab="scores">Embeddings &amp; similarity
+                    </button>
+                    <button id="tab-search" role="tab" aria-selected="false" aria-controls="search-view"
+                            data-tab="search">Search
+                    </button>
+                </div>
+                <section id="scores-view" role="tabpanel" aria-labelledby="tab-scores">
+                    <div id="embedding-map"></div>
+                    <p id="map-note" class="muted small"></p>
+                    <p id="score-note" class="muted small"></p>
+                    <div id="rankings"></div>
+                </section>
+                <section id="search-view" role="tabpanel" aria-labelledby="tab-search" hidden>
+                    <div id="search-results"></div>
+                </section>
+            </aside>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
